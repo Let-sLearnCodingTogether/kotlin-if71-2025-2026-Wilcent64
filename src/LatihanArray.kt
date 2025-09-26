@@ -1,10 +1,12 @@
+fun varargParameter(vararg angka: Int) {
+    println("Jumlah angka: ${angka.size}")
+    for (i in angka) {
+        println("Angka: $i")
+    }
+}
 fun main() {
-    val hari : Array<String> = arrayOf("Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu")
+    varargParameter(1, 2, 3, 4, 5)
 
-    println("Jumlah hari : ${hari.size}")
-    println("Hari Pertama : " + hari[0])
-    println("Hari Terakhir : " +hari[hari.size-1])
-
-    hari.set(5, "Jum'at Barokah")
-    println(hari[5])
+    val angkaArray = intArrayOf(10, 20, 30, 40)
+    varargParameter(*angkaArray)
 }
