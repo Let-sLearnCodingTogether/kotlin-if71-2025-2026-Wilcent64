@@ -5,7 +5,7 @@ fun main() {
         "Kalkulus",
         "Algotima dan Struktur data"
     )
-    
+
     val mataKuliahPilihan : MutableList<String> = mutableListOf(
     "kotlin",
     "Logika Fuzzy")
