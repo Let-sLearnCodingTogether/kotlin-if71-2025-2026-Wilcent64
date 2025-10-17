@@ -11,9 +11,15 @@ fun main() {
         println("Masukkan Berat Barang : ")
         val beratBarang = readln().toDoubleOrNull() ?: 0.0
 
+<<<<<<< Updated upstream
         if (beratBarang != 0.0) {
             totalBeratBawaan += beratBarang
         }
+=======
+//        if (beratBarang != 0.0) {
+//            totalBeratBawaan += beratBarang
+//        }
+>>>>>>> Stashed changes
 
         if (totalBeratBawaan > KAPASITAS_TAS) {
             println("Bahaya! Kelebihan muatan! Berat saat ini: $totalBeratBawaan kg. Kapasitas hanya $KAPASITAS_TAS kg.")
@@ -21,6 +27,10 @@ fun main() {
         } else if (totalBeratBawaan == KAPASITAS_TAS) {
             println("Optimal! Tas milik $NAMA_PETUALANG sekarang penuh dengan sempurna.")
             break
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         } else {
             val sisaKapasitas = KAPASITAS_TAS - totalBeratBawaan
             println("Barang '$namaBarang' berhasil dimasukkan. Sisa kapasitas tas: $sisaKapasitas kg")
