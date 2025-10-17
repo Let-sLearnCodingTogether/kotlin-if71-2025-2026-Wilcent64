@@ -12,9 +12,15 @@ fun main() {
         val beratBarang = readln().toDoubleOrNull() ?: 0.0
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         if (beratBarang != 0.0) {
             totalBeratBawaan += beratBarang
         }
+=======
+//        if (beratBarang != 0.0) {
+//            totalBeratBawaan += beratBarang
+//        }
+>>>>>>> Stashed changes
 =======
 //        if (beratBarang != 0.0) {
 //            totalBeratBawaan += beratBarang
@@ -28,6 +34,10 @@ fun main() {
             println("Optimal! Tas milik $NAMA_PETUALANG sekarang penuh dengan sempurna.")
             break
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
