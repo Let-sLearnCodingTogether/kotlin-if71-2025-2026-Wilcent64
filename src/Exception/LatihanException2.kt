@@ -1,0 +1,19 @@
+package Exception
+
+class StokHabisException (msg : String) : Exception(msg)
+class Barang(val nama : String, var stok : Int){
+
+        fun beliBarang(barang : Barang, jumlahBeli : Int) {
+            if (jumlahBeli > barang.stok) {
+                throw StokHabisException("Gagal beli ${nama}. Stok hanya sisa ${stok}")
+            }
+            stok -= jumlahBeli
+            println("Berhasil membeli ${jumlahBeli}${nama}")
+    }
+}
+
+fun main() {
+    val beli = Barang("Laptop", 10)
+
+    beli.beliBarang(beli, 4)
+}
